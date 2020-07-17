@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Biglietto treno</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>CALCOLA IL PREZZO DEL BIGLIETTO</h1>
+      <div class="container-top">
+        <form class="" action="index.html" method="post">
+          <!--<label for="name">Nome Cognome</label>-->
+          <input id="nec" type="text" placeholder="Nome e Cognome">
+          <!--<label for="Km">Km</label>-->
+          <input id="kilo" type="number" placeholder="Km da percorrere">
+          <!--<label for="">Fascia di età</label>-->
+          <select id="eta" class="" name="">
+            <option value="">Minorenne</option>
+            <option value="">Maggiorenne</option>
+            <option value="">Over 65</option>
+          </select>
+        </form>
+        <div class="btn-ctr-top">
+          <button id="generare" type="button" name="button">Genera</button>
+          <button id="annulla"type="button" name="button">Annulla</button>
+        </div>
+      </div>
+      <h2>IL TUO BIGLIETTO</h2>
+      <div class="container-bottom">
+        <div class="dettaglipax">
+          <p>Dettagli passeggero</p>
+        </div>
+        <div class="tab">
+          <table>
+              <tr>
+                <th class="pax">NOME PASSEGGERO</th>
+                <th>Offerta</th>
+                <th>Carrozza</th>
+                <th>Codice Cp</th>
+                <th>Costo Biglietto</th>
+              </tr>
+              <tr>
+                <td id="nome-pax"></td>
+                <td id="sconto-pax"></td>
+                <td id="carrozza"></td>
+                <td id="codice"></td>
+                <td id="prezzo"></td>
+              </tr>
+            </table>
+        </div>
+
+      </div>
+    </div>
+    <script src="js/app.js" charset="utf-8"></script>
+  </body>
+</html>
